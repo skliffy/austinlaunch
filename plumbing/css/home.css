@@ -507,7 +507,7 @@ nav {
 /* COUPONS SECTION */
 .coupons-section {
   padding: 80px 0;
-  background-image: url('/photos/coupon-background1.png');
+  background-image: url('../photos/coupon-background1.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1413,3 +1413,4 @@ nav {
       }
 
     }
+
