@@ -139,7 +139,7 @@ nav {
       position: relative;
       width: 100%;
       min-height: 920px;
-      background-image: url('../photos/bg1.jpg');
+      background-image: url('/photos/bg1.jpg');
       background-size: cover;
       background-position: center;
       display: flex;
@@ -731,6 +731,7 @@ nav {
       }
 
     }
+
 
 
 
