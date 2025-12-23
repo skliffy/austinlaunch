@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - XYZ Plumbing</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-logo-div">
+          <img src="/icons/logo.png" alt="" class="nav-logo" />
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><button class="btn-request">REQUEST A SERVICE</button></li>
+        </ul>
+
+        <button class="hamburger" onclick="openMenu()">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" onclick="closeMenu()">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <ul class="mobile-links">
+        <li><a href="#home" onclick="closeMenu()">HOME</a></li>
+        <li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
+        <li><a href="#about" onclick="closeMenu()">ABOUT US</a></li>
+        <li>
+          <button class="btn-request" onclick="closeMenu()">
+            REQUEST A SERVICE
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-red-line"></div>
+        <h1 class="hero-title">
+          Providing Reliable Services to the South Bay and Southern California
+          since 1990.
+        </h1>
+      </div>
+    </section>
+
+
+    <section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-wrapper">
+      <!-- LEFT SIDE -->
+      <div class="contact-info-box">
+        <div class="contact-info-content">
+          <div class="contact-info-header">
+            <div class="info-header-line"></div>
+            <h2 class="info-box-title">CONTACT US</h2>
+          </div>
+
+          <div class="contact-info-list">
+            <div class="info-item">
+              <img src="/icons/phone-black.png" alt="Phone" class="info-item-icon">
+              <span class="info-item-text">(555) 123-4567</span>
+            </div>
+
+            <div class="info-item">
+              <img src="/icons/location-black.png" alt="Address" class="info-item-icon">
+              <span class="info-item-text">123 Main Street, Los Angeles, CA 90001</span>
+            </div>
+
+            <div class="info-item">
+              <img src="/icons/mail-black.png" alt="Email" class="info-item-icon">
+              <span class="info-item-text">info@xyzplumbing.com</span>
+            </div>
+
+            <div class="info-item">
+              <img src="/icons/clock-black.png" alt="Hours" class="info-item-icon">
+              <span class="info-item-text">Mon-Fri: 8AM - 6PM<br/>Sat-Sun: 9AM - 4PM</span>
+            </div>
+          </div>
+
+          <div class="contact-bottom-image">
+            <img src="/photos/paywithhearth.png" alt="Bottom image">
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="contact-form-box">
+        <div class="contact-form-wrapper">
+          <div class="form-header">
+            <h3 class="contact-title">Request Service</h3>
+            <p class="form-description">
+              Fill out the form below and we'll get back to you as soon as possible to confirm your service appointment.
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-input"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group-full">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Address"
+                required
+              />
+            </div>
+
+            <div class="form-group-full">
+              <div class="coupon-field" style="position: relative;">
+                <input
+                  type="text"
+                  class="form-input coupon-field"
+                  id="couponInput"
+                  placeholder="Coupon Code (Optional)"
+                />
+                <span class="coupon-discount" id="couponDiscount"></span>
+              </div>
+            </div>
+
+            <div class="form-group-full">
+              <textarea
+                class="form-textarea"
+                placeholder="What service do you need?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- Brand Section -->
+          <div class="footer-brand">
+            <img
+              src="/icons/logo-footer.png"
+              alt="XYZ Plumbing"
+              class="footer-logo"
+            />
+            <button class="btn-footer-request">Request Services</button>
+          </div>
+
+          <!-- Contact Info Section -->
+          <div class="footer-contact">
+            <h4 class="footer-section-title">Contact Info</h4>
+            <div class="footer-info-list">
+              <div class="footer-info-item">
+                <img src="/icons/phone.png" alt="Phone" class="footer-icon" />
+                <span class="footer-info-text">(555) 123-4567</span>
+              </div>
+              <div class="footer-info-item">
+                <img
+                  src="/icons/location.png"
+                  alt="Address"
+                  class="footer-icon"
+                />
+                <span class="footer-info-text"
+                  >123 Main Street, Los Angeles, CA 90001</span
+                >
+              </div>
+              <div class="footer-info-item">
+                <img src="/icons/mail.png" alt="Email" class="footer-icon" />
+                <span class="footer-info-text">info@xyzplumbing.com</span>
+              </div>
+              <div class="footer-info-item">
+                <img src="/icons/clock.png" alt="Hours" class="footer-icon" />
+                <span class="footer-info-text"
+                  >Mon-Fri: 8AM - 6PM<br />Sat-Sun: 9AM - 4PM</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="footer-social">
+            <h4 class="footer-section-title">Our Social Media</h4>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-link" aria-label="Instagram">
+                <img
+                  src="/icons/instagram.png"
+                  alt="Instagram"
+                  class="footer-social-icon"
+                />
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Facebook">
+                <img
+                  src="/icons/facebook.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+              </a>
+              <a href="#" class="footer-social-link" aria-label="X (Twitter)">
+                <img src="/icons/x.png" alt="X" class="footer-social-icon" />
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Yelp">
+                <img
+                  src="/icons/yelp.png"
+                  alt="Yelp"
+                  class="footer-social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 XYZ Plumbing. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+<script src="js/menu.js"></script>
+<script src="js/coupons.js"></script>
+</body>
+</html>
