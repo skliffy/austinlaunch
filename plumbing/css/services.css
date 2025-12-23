@@ -138,7 +138,7 @@ nav {
       position: relative;
       width: 100%;
       height: 920px;
-      background-image: url('/photos/background1.png');
+      background-image: url('https://images.stockcake.com/public/8/5/d/85d3af32-a4db-49aa-89d2-a2aa095b2dec/plumber-fixing-pipes-stockcake.jpg');
       background-size: cover;
       background-position: center;
       display: flex;
@@ -1295,4 +1295,5 @@ nav {
         width: 20px;
         height: 20px;
       }
+
     }
