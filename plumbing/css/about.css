@@ -139,7 +139,7 @@ nav {
       position: relative;
       width: 100%;
       height: 920px;
-      background-image: url('../plumbing/photos/background1.png');
+      background-image: url('../photos/background1.png');
       background-size: cover;
       background-position: center;
       display: flex;
@@ -731,6 +731,7 @@ nav {
       }
 
     }
+
 
 
 
