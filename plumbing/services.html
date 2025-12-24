@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - XYZ Plumbing</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/services.css">
+</head>
+<body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-logo-div">
+          <img src="/icons/logo.png" alt="" class="nav-logo" />
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><button class="btn-request">REQUEST A SERVICE</button></li>
+        </ul>
+
+        <button class="hamburger" onclick="openMenu()">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" onclick="closeMenu()">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <ul class="mobile-links">
+        <li><a href="#home" onclick="closeMenu()">HOME</a></li>
+        <li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
+        <li><a href="#about" onclick="closeMenu()">ABOUT US</a></li>
+        <li>
+          <button class="btn-request" onclick="closeMenu()">
+            REQUEST A SERVICE
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <section class="hero" id="home">
+  <img src="../plumbing/photos/bg1.jpg" alt="Plumbing Services" class="hero-background">
+  <div class="hero-content">
+    <div class="hero-red-line"></div>
+    <h1 class="hero-title">
+      Providing Reliable Services to the South Bay and Southern California
+      since 1990.
+    </h1>
+  </div>
+</section>
+
+    <section class="services-section">
+  <div class="services-container">
+    <div class="services-header">
+      <div class="header-line"></div>
+      <h2 class="services-title">OUR SERVICES</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="/photos/service1-hydrojetting.png" alt="Emergency Plumbing" class="service-card-image">
+        <div class="service-card-gradient"></div>
+        <div class="service-card-content">
+          <h3 class="service-card-title">Hydrojetting</h3>
+          <p class="service-card-description">Powerful water jetting to remove grease, debris, and buildup from your pipes, restoring full flow and preventing future clogs.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="/photos/service2-draincleaning.png" alt="Pipe Installation" class="service-card-image">
+        <div class="service-card-gradient"></div>
+        <div class="service-card-content">
+          <h3 class="service-card-title">Drain cleaning</h3>
+          <p class="service-card-description">Thorough drain cleaning to remove buildup, eliminate odors, and keep your plumbing system flowing smoothly.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="/photos/service3-plumbing.png" alt="Water Heaters" class="service-card-image">
+        <div class="service-card-gradient"></div>
+        <div class="service-card-content">
+          <h3 class="service-card-title">Residential plumbing</h3>
+          <p class="service-card-description">Complete plumbing solutions for your home — from repairs and installations to maintenance and upgrades.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="/photos/service4-inspection.png" alt="Drain Cleaning" class="service-card-image">
+        <div class="service-card-gradient"></div>
+        <div class="service-card-content">
+          <h3 class="service-card-title">Sewer inspection</h3>
+          <p class="service-card-description">See what’s really happening underground! Our sewer camera inspection finds problems fast — saving you time and money.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="/photos/service5-replacement.png" alt="Leak Detection" class="service-card-image">
+        <div class="service-card-gradient"></div>
+        <div class="service-card-content">
+          <h3 class="service-card-title">Sewer line replacement</h3>
+          <p class="service-card-description">Out with the old, in with the new! We replace damaged sewer lines quickly and efficiently to keep your property protected.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="/photos/service6-sumppump.png" alt="Maintenance" class="service-card-image">
+        <div class="service-card-gradient"></div>
+        <div class="service-card-content">
+          <h3 class="service-card-title">Sump pump</h3>
+          <p class="service-card-description">Protect your home from flooding! Our sump pump experts ensure your system runs smoothly when you need it most.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="coupons-section">
+      <div class="coupons-container">
+        <h2 class="coupons-main-title">CLAIM A COUPON</h2>
+
+        <div class="coupons-grid">
+          <a href="/checkout?coupon=1" class="coupon-box">
+            <img src="/photos/coupon1.png" alt="Coupon 1" />
+          </a>
+
+          <a href="/checkout?coupon=2" class="coupon-box">
+            <img src="/photos/coupon2.png" alt="Coupon 2" />
+          </a>
+
+          <a href="/checkout?coupon=3" class="coupon-box">
+            <img src="/photos/coupon3.png" alt="Coupon 3" />
+          </a>
+
+          <a href="/checkout?coupon=4" class="coupon-box">
+            <img src="/photos/coupon4.png" alt="Coupon 4" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section">
+      <div class="reviews-container">
+        <h2 class="reviews-main-title">WHAT OUR CUSTOMERS SAY</h2>
+
+        <div class="reviews-header">
+          <span class="reviews-text">EXCELLENT REVIEWS</span>
+          <img
+            src="/photos/REVIEW-STARS.png"
+            alt="5 stars"
+            class="reviews-stars"
+          />
+        </div>
+
+        <div class="reviews-slider-wrapper">
+          <button
+            class="slider-arrow slider-arrow-left"
+            onclick="slideReviews(-1)"
+          >
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <div class="reviews-slider">
+            <div class="reviews-track" id="reviewsTrack">
+              <div class="review-box">
+                <img src="/photos/review1.png" alt="Customer Review 1" />
+              </div>
+              <div class="review-box">
+                <img src="/photos/review2.png" alt="Customer Review 2" />
+              </div>
+              <div class="review-box">
+                <img src="/photos/review1.png" alt="Customer Review 3" />
+              </div>
+              <div class="review-box">
+                <img src="/photos/review1.png" alt="Customer Review 4" />
+              </div>
+              <div class="review-box">
+                <img src="/photos/review2.png" alt="Customer Review 5" />
+              </div>
+              <div class="review-box">
+                <img src="/photos/review1.png" alt="Customer Review 6" />
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="slider-arrow slider-arrow-right"
+            onclick="slideReviews(1)"
+          >
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="review-platforms">
+          <img src="/photos/yelp-logo.png" alt="Yelp" class="platform-logo" />
+          <img
+            src="/photos/google-review-logo.png"
+            alt="Google Reviews"
+            class="platform-logo"
+          />
+          <img
+            src="/photos/facebook-reviews-logo.png"
+            alt="Facebook"
+            class="platform-logo"
+          />
+          <img
+            src="/photos/instagram-follow-us.png"
+            alt="Trustpilot"
+            class="platform-logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-content">
+          <div class="cta-image">
+            <img src="/photos/plumbers-picture.png" alt="Plumbing Service" />
+          </div>
+
+          <div class="cta-text">
+            <div class="cta-header">
+              <div class="cta-red-line-vertical"></div>
+              <h3 class="cta-title">YOUR PLUMBER</h3>
+            </div>
+            <p class="cta-description">
+              When an unexpected plumbing issue strikes, you need a reliable
+              professional who is ready to respond at any hour, any day. Trust
+              XYZ Plumbing, your premier 24-hour plumber in Los Angeles, CA, and
+              the surrounding areas. Our team of certified plumbers is equipped
+              to tackle any emergency, ensuring that disruptions to your daily
+              life are kept to a minimum. Whether it’s a burst pipe at dawn or a
+              clogged drain at midnight, our prompt and professional service is
+              just a call away. When an unexpected plumbing issue strikes, you
+              need a reliable professional who is ready to respond at any hour,
+              any day. Trust XYZ Plumbing, your premier 24-hour plumber in Los
+              Angeles, CA, and the surrounding areas.
+            </p>
+
+            <div class="cta-action">
+              <button class="btn-cta">
+                <img src="/icons/wrenchandscrewdriver.svg" alt="wrench" />
+                REQUEST SERVICES
+              </button>
+              <span class="cta-call-text">Or call us at: (555) 123-4567</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-box">
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345495!2d-118.69192993370524!3d34.02016130653294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <div class="contact-header">
+              <h3 class="contact-title">OUR SERVICE AREA</h3>
+              <p class="contact-description">
+                Our goal is to provide the best plumbing service to home and
+                business owners in our community. We work diligently to keep
+                your plumbing system functioning at all times.
+              </p>
+            </div>
+
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    class="form-input"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group-full">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+
+              <div class="form-group-full">
+                <textarea
+                  class="form-textarea"
+                  placeholder="What you need help with?"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- Brand Section -->
+          <div class="footer-brand">
+            <img
+              src="/icons/logo-footer.png"
+              alt="XYZ Plumbing"
+              class="footer-logo"
+            />
+            <button class="btn-footer-request">Request Services</button>
+          </div>
+
+          <!-- Contact Info Section -->
+          <div class="footer-contact">
+            <h4 class="footer-section-title">Contact Info</h4>
+            <div class="footer-info-list">
+              <div class="footer-info-item">
+                <img src="/icons/phone.png" alt="Phone" class="footer-icon" />
+                <span class="footer-info-text">(555) 123-4567</span>
+              </div>
+              <div class="footer-info-item">
+                <img
+                  src="/icons/location.png"
+                  alt="Address"
+                  class="footer-icon"
+                />
+                <span class="footer-info-text"
+                  >123 Main Street, Los Angeles, CA 90001</span
+                >
+              </div>
+              <div class="footer-info-item">
+                <img src="/icons/mail.png" alt="Email" class="footer-icon" />
+                <span class="footer-info-text">info@xyzplumbing.com</span>
+              </div>
+              <div class="footer-info-item">
+                <img src="/icons/clock.png" alt="Hours" class="footer-icon" />
+                <span class="footer-info-text"
+                  >Mon-Fri: 8AM - 6PM<br />Sat-Sun: 9AM - 4PM</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="footer-social">
+            <h4 class="footer-section-title">Our Social Media</h4>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-link" aria-label="Instagram">
+                <img
+                  src="/icons/instagram.png"
+                  alt="Instagram"
+                  class="footer-social-icon"
+                />
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Facebook">
+                <img
+                  src="/icons/facebook.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+              </a>
+              <a href="#" class="footer-social-link" aria-label="X (Twitter)">
+                <img src="/icons/x.png" alt="X" class="footer-social-icon" />
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Yelp">
+                <img
+                  src="/icons/yelp.png"
+                  alt="Yelp"
+                  class="footer-social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2026 XYZ Plumbing. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/menu.js"></script>
+    <script src="/js/reviews.js"></script>
+</body>
+</html>
