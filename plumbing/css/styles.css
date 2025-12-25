@@ -5,6 +5,11 @@
     font-family: "Montserrat";
 }
 
+a {
+  color: inherit;    
+  text-decoration: none; 
+}
+
 /* FONTS MAYBE EDITED - UPPER */
 
 
@@ -49,5 +54,6 @@
 }
 
 /* FONTS MAYBE EDITED - LOWER */
+
 
 
